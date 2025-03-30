@@ -1,0 +1,4 @@
+br\com\solari\infrastructure\config\GlobalExceptionHandler.class
+br\com\solari\infrastructure\persistence\entity\ClientEntity.class
+br\com\solari\application\usecase\exception\BusinessException.class
+br\com\solari\infrastructure\persistence\entity\AddressEntity.class
