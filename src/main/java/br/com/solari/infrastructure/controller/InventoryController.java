@@ -47,16 +47,16 @@ public class InventoryController {
     final var inventory = this.findInventoryById.execute(id);
     return ResponseEntity.ok(inventoryPresenter.parseToResponse(inventory));
   }
+//transformar a lista num resultado unico
+@GetMapping("/sku/{sku}")
+public ResponseEntity<List<InventoryPresenterResponse>> findAllBySku(@PathVariable final String sku) {
+  final var inventories = this.searchInventory.execute(sku);
+  final var response = inventories.stream()
+          .map(inventoryPresenter::parseToResponse)
+          .collect(Collectors.toList());
 
-  @GetMapping("/sku/{sku}")
-  public ResponseEntity<List<InventoryPresenterResponse>> findAllBySku(@PathVariable final String sku) {
-    final var inventories = this.searchInventory.execute(sku);
-    final var response = inventories.stream()
-            .map(inventoryPresenter::parseToResponse)
-            .collect(Collectors.toList());
-
-    return ResponseEntity.ok(response);
-  }
+  return ResponseEntity.ok(response);
+}
 
   @PutMapping("/sku/{sku}")
   public ResponseEntity<List<InventoryPresenterResponse>> updateBySku(
