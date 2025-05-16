@@ -22,8 +22,12 @@ public class UpdateInventory {
       throw new InventoryNotFoundException(sku);
     }
 
-    inventories.forEach(inventory ->
-            inventory.setQuantity(inventory.getQuantity() + request.getQuantity()));
+    inventories.forEach(inventory -> {
+      if (inventory.getQuantity() + request.getQuantity() < 0) {
+        throw new IllegalArgumentException("Insufficient stock for SKU: " + sku);
+      }
+      inventory.setQuantity(inventory.getQuantity() + request.getQuantity());
+    });
 
     return inventories.stream()
             .map(inventoryGateway::update)
