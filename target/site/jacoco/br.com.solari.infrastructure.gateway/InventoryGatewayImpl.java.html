@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>InventoryGatewayImpl.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Solari - Inventory Service</a> &gt; <a href="index.source.html" class="el_package">br.com.solari.infrastructure.gateway</a> &gt; <span class="el_source">InventoryGatewayImpl.java</span></div><h1>InventoryGatewayImpl.java</h1><pre class="source lang-java linenums">package br.com.solari.infrastructure.gateway;
+
+import br.com.solari.application.domain.Inventory;
+import br.com.solari.application.gateway.InventoryGateway;
+import br.com.solari.application.gateway.exception.GatewayException;
+import br.com.solari.infrastructure.persistence.entity.InventoryEntity;
+import br.com.solari.infrastructure.persistence.repository.InventoryRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
+import java.util.Optional;
+
+@Component
+@RequiredArgsConstructor
+public class InventoryGatewayImpl implements InventoryGateway {
+
+  private final InventoryRepository inventoryRepository;
+  private static final String FIND_ERROR_MESSAGE = &quot;Inventory with id=[%s] not found.&quot;;
+
+  @Override
+  public Inventory save(final Inventory inventory) {
+<span class="fc" id="L23">    final var entity = InventoryEntity.builder()</span>
+<span class="fc" id="L24">            .sku(inventory.getSku())</span>
+<span class="fc" id="L25">            .quantity(inventory.getQuantity())</span>
+<span class="fc" id="L26">            .build();</span>
+
+<span class="fc" id="L28">    final var saved = inventoryRepository.save(entity);</span>
+
+<span class="fc" id="L30">    return this.toResponse(saved);</span>
+  }
+
+  @Override
+  public Inventory update(final Inventory inventory) {
+<span class="fc" id="L35">    final var entity = inventoryRepository.findById(inventory.getId())</span>
+<span class="fc" id="L36">            .orElseThrow(() -&gt; new GatewayException(String.format(FIND_ERROR_MESSAGE, inventory.getId())));</span>
+
+<span class="fc" id="L38">    entity.setQuantity(inventory.getQuantity());</span>
+
+<span class="fc" id="L40">    final var updated = inventoryRepository.save(entity);</span>
+
+<span class="fc" id="L42">    return this.toResponse(updated);</span>
+  }
+
+  @Override
+  public void deleteById(final Integer id) {
+<span class="fc" id="L47">    inventoryRepository.deleteById(id);</span>
+<span class="fc" id="L48">  }</span>
+
+  @Override
+  public Optional&lt;Inventory&gt; findById(final Integer id) {
+<span class="fc" id="L52">    return inventoryRepository.findById(id).map(this::toResponse);</span>
+  }
+
+  @Override
+  public List&lt;Inventory&gt; findAllBySku(final String sku) {
+<span class="fc" id="L57">    return inventoryRepository.findAllBySku(sku).stream()</span>
+<span class="fc" id="L58">            .map(this::toResponse)</span>
+<span class="fc" id="L59">            .toList();</span>
+  }
+
+  private Inventory toResponse(final InventoryEntity entity) {
+<span class="fc" id="L63">    return Inventory.builder()</span>
+<span class="fc" id="L64">            .id(entity.getId())</span>
+<span class="fc" id="L65">            .sku(entity.getSku())</span>
+<span class="fc" id="L66">            .quantity(entity.getQuantity())</span>
+<span class="fc" id="L67">            .build();</span>
+  }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.10.202304240956</span></div></body></html>

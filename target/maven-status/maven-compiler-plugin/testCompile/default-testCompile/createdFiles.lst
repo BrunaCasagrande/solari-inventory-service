@@ -1,0 +1,8 @@
+br\com\solari\application\usecase\SearchInventoryTest.class
+br\com\solari\infrastructure\gateway\InventoryGatewayImplTest.class
+br\com\solari\application\usecase\CreateInventoryTest.class
+br\com\solari\application\usecase\FindInventoryByIdTest.class
+br\com\solari\application\domain\InventoryTest.class
+br\com\solari\application\usecase\DeleteInventoryTest.class
+br\com\solari\infrastructure\controller\InventoryControllerTest.class
+br\com\solari\application\usecase\UpdateInventoryTest.class
