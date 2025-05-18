@@ -105,6 +105,6 @@ http://localhost:8084/swagger-ui/index.html
 
 ## 👩‍💻 Autor
 
-Desenvolvido por **Bruna Casagrande** – RM: 359536 – como parte do projeto **Solari**
+Desenvolvido por **Bruna Casagrande RM: 359536 ** – como parte do projeto **Solari**
 """
 
