@@ -18,8 +18,8 @@ public class Inventory {
 
   private Integer id;
 
-  @Pattern(regexp = "\\d+", message = "SKU must contain only numbers")
   @NotBlank(message = "SKU is required")
+  @Pattern(regexp = "\\d+", message = "SKU must contain only numbers")
   private String sku;
 
   @NotNull(message = "Quantity is required")
