@@ -19,7 +19,7 @@ Este microsserviço é responsável por gerenciar o estoque de produtos do siste
 
 ## 🧱 Estrutura do Projeto
 
-O projeto segue a arquitetura hexagonal, dividindo responsabilidades em camadas bem definidas:
+O projeto segue os princípios da Clean Architecture dividindo responsabilidades em camadas bem definidas:
 
 - **application**: Contém os casos de uso e regras de negócio
 - **domain**: Representa as entidades e objetos de domínio
