@@ -96,13 +96,6 @@ http://localhost:8084/solari/v1/inventory
 
 ---
 
-## 📚 Documentação da API
-
-A documentação da API pode ser acessada em:  
-http://localhost:8084/swagger-ui/index.html
-
----
-
 ## 👩‍💻 Autor
 
 Desenvolvido por **Bruna Casagrande RM: 359536 ** – como parte do projeto **Solari**
