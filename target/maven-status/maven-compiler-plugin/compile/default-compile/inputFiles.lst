@@ -1,24 +1,22 @@
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\application\domain\Address.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\application\domain\Client.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\application\domain\exception\DomainException.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\application\domain\exception\ErrorDetail.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\application\dto\UpdateClientDto.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\application\gateway\ClientGateway.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\application\gateway\exception\GatewayException.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\application\usecase\CreateClient.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\application\usecase\DeleteClient.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\application\usecase\exception\BusinessException.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\application\usecase\exception\ClientAlreadyExistsException.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\application\usecase\exception\ClientNotFoundException.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\application\usecase\SearchClient.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\application\usecase\UpdateClient.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\ClientServiceApplication.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\infrastructure\config\GlobalExceptionHandler.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\infrastructure\config\SystemBaseException.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\infrastructure\controller\ClientController.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\infrastructure\gateway\ClientGatewayImpl.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\infrastructure\persistence\entity\AddressEntity.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\infrastructure\persistence\entity\ClientEntity.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\infrastructure\persistence\repository\ClientRepository.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\infrastructure\presenter\ClientPresenter.java
-C:\solari\solari-inventory-service\src\main\java\br\com\solari\infrastructure\presenter\response\ClientPresenterResponse.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\application\domain\exception\DomainException.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\application\domain\exception\ErrorDetail.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\application\domain\Inventory.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\application\dto\UpdateInventoryDto.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\application\gateway\exception\GatewayException.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\application\gateway\InventoryGateway.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\application\usecase\CreateInventory.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\application\usecase\DeleteInventory.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\application\usecase\exception\BusinessException.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\application\usecase\exception\InventoryNotFoundException.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\application\usecase\FindInventoryById.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\application\usecase\SearchInventory.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\application\usecase\UpdateInventory.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\infrastructure\config\GlobalExceptionHandler.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\infrastructure\config\SystemBaseException.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\infrastructure\controller\InventoryController.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\infrastructure\gateway\InventoryGatewayImpl.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\infrastructure\persistence\entity\InventoryEntity.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\infrastructure\persistence\repository\InventoryRepository.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\infrastructure\presenter\InventoryPresenter.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\infrastructure\presenter\response\InventoryPresenterResponse.java
+C:\Users\ribol\Desktop\FIAP\Projeto aprendizado nas ferias\Bruna\Testes Kafka\Projetos\solari-inventory-service\src\main\java\br\com\solari\InventoryServiceApplication.java
