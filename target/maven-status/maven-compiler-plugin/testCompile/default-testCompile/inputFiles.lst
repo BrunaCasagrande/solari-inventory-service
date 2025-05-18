@@ -1,0 +1,8 @@
+C:\solari\solari-inventory-service\src\test\java\br\com\solari\application\domain\InventoryTest.java
+C:\solari\solari-inventory-service\src\test\java\br\com\solari\application\usecase\CreateInventoryTest.java
+C:\solari\solari-inventory-service\src\test\java\br\com\solari\application\usecase\DeleteInventoryTest.java
+C:\solari\solari-inventory-service\src\test\java\br\com\solari\application\usecase\FindInventoryByIdTest.java
+C:\solari\solari-inventory-service\src\test\java\br\com\solari\application\usecase\SearchInventoryTest.java
+C:\solari\solari-inventory-service\src\test\java\br\com\solari\application\usecase\UpdateInventoryTest.java
+C:\solari\solari-inventory-service\src\test\java\br\com\solari\infrastructure\controller\InventoryControllerTest.java
+C:\solari\solari-inventory-service\src\test\java\br\com\solari\infrastructure\gateway\InventoryGatewayImplTest.java
